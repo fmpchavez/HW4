@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>High Scores</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        
+    <div id="end" class="flex-center flex-column">
+    <h1 class="username">Good job!<span class="name"></span></h1>
+    <h2 class="userpoints">Your Score: <span class="points"></span></h2>
+    <!-- <h2 class="usertime"> Time Left: <span class="time_taken"></span></h2> -->
+        <form>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="username"
+          />
+          <button
+            type="submit"
+            class="btn"
+            id="saveScoreBtn"
+            onclick="saveHighScore(event)"
+          >
+            Save
+          </button>
+        </form>
+        <a class="btn" href="index.html">Play Again</a>
+        <a class="btn" href="#">Clear Scores</a>
+        <h2 id="finalScore">High Scores</h2>
+        <ul id="highScoresList"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
